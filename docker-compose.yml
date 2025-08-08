@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8888:8888" # map container port to host port
+    volumes:
+      - .:/app # mount directory into a container
+    environment:
+      - ENV=production

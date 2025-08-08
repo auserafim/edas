@@ -22,6 +22,6 @@ COPY . .
 # Env variable
 ENV NAME=World
 
-# run jupyer when notebook launches
+# default command to run when starting container from this image 
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
 
